@@ -1,0 +1,51 @@
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+.page-container {
+	padding: 16px 0 16px 16px;
+	width: 100%;
+	display: flex;
+	position: relative;
+	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
+}
+.page-container__section {
+	border: 1px solid #333;
+	border-radius: 4px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-right: 16px;
+	max-width: 100%;
+	min-width: 150px;
+}
+.controls {
+	padding: 8px;
+}
+
+.email-preview {
+}
+.email-preview--raw-html {
+	font-family: monospace;
+}
+
+.controls__header {
+	height: 56px;
+	width: auto;
+	background-color: #4FC3F7;
+	position: relative;
+	margin-bottom: 16px;
+}
+h2 {
+	color: white;
+	font-size: 24px;
+	left: 16px;
+	bottom: 8px;
+	position: absolute;
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+.hidden {
+	display: none;
+}

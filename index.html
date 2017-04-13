@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<title>Email Builder</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page-container">
+		<div class="controls page-container__section">
+			<div class="controls__header">
+				<h2>Controls</h2>
+
+			</div>
+			<ul class="controls__section-list">
+				<li>Email Body</li>
+				<li><button type="button" class="add-section" onclick="showHtml()">Show HTML</button></li>
+			</ul>
+		</div>
+		<iframe id="result" class="email-preview page-container__section" name="result" sandbox="allow-forms allow-scripts allow-same-origin allow-modals allow-popups"></iframe>
+		<div class="email-preview email-preview--raw-html page-container__section hidden"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
