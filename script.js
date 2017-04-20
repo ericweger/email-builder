@@ -46,6 +46,18 @@ var email = {
 	}]
 }
 
+Vue.component('outer-component', {
+    props: ['comp'],
+    template: '<li>{{ comp.id }}</li>'
+})
+
+
+var app = new Vue({
+    el: '#section-list',
+    data: {
+        email: email.components
+    }
+})
 
 
 function build(contents) {
@@ -96,15 +108,6 @@ function buildComponent(component) {
 	return newElem;
 }
 
-function showHtml() {
-	var html = frameDoc.documentElement.innerHTML;
-	var text = document.createTextNode(html);
-	var div = document.getElementsByClassName("email-preview--raw-html").item(0);
-	div.appendChild(text);
-	var iframe = document.getElementById("result");
-	iframe.className += " hidden";
-	div.classList.remove("hidden");
-}
 
 
 build(email);
